@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* common section  */
+
 .container{
     width: 80%;
     margin: 0 auto;
@@ -16,7 +19,6 @@
    align-items: center;
    padding: 10px;
    height: 10vh;
-   border: 2px solid red;
 }
 
 .logo{
@@ -27,7 +29,7 @@
 
 .nav-bar>.menu>ul{
     display: flex;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .nav-bar>.menu>ul>li{
@@ -38,7 +40,8 @@
 /* banner section  */
 .banner{
     height: 75vh;
-    background-image:  url(../images/bannerimg.png);
+
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/bannerimg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,10 +52,11 @@
 }
 
 .banner-content{
+    width: 60%;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid red;
 }
 
 @media screen and (max-width:600px) {
