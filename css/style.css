@@ -27,6 +27,11 @@
     margin: 0 auto;
 }
 
+.container-fluid{
+    width: 100%;
+    margin: 0 auto;
+}
+
 .px-2{
     padding: 0 20px;
 }
@@ -328,10 +333,22 @@
     border-radius: 10px;
 }
 
+.footer{
+    background-color: rgb(243,243,243);
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+
+}
+
 @media screen and (max-width:600px) {
-    .container{
-        width: 90%;
-    }
+    
     .common-content{
         width: 80%;   
         text-align: center;
@@ -344,11 +361,11 @@
 
     .nav-bar{
         flex-direction: column;
-        height: 25vh;
+        height: 10vh;
         gap: 10px;
     }
     .banner{
-        height: 75vh;
+        height: 45vh;
     }
     .banner-content{
         width: 80%;
@@ -362,7 +379,7 @@
     
     .banner-content>.form>.form-element,.common-button{
         padding: 1.5rem;
-        width: 14rem;
+        width: 18rem;
     }
 
     .tour-section{
@@ -433,10 +450,8 @@
         flex-direction: column;
     }
 
-    .news-letter-content{
-       
-        width: 90%;
-        
+    .news-letter-content{      
+        width: 90%;  
         padding: 15px;
     }
     
