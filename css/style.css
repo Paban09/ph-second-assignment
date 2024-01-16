@@ -303,7 +303,7 @@
     height: 50px;
     width: 50px;
 }
-.choose-us-grid .card-img>img{
+.choose-us-grid .card-img>img,.news-letter-img>img{
     width: 100%;
 }
 
@@ -324,22 +324,51 @@
     grid-row: 2/span 1;
 }
 
+
+.news-letter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.news-letter-content{
+    width: 42%;
+    border: 2px solid rgb(224,64,29);
+    border-radius: 16px;
+    padding: 50px;
+}
+.news-letter-img{
+    width: 55%;
+}
+
+.news-letter-form{
+    display: flex;
+    flex-direction: column;
+}
+.news-letter-form-element{
+    width: 100%;
+    padding:1rem;
+    border-radius: 10px;
+    /* border:none; */
+    /* outline: none; */
+}
+
 @media screen and (max-width:600px) {
 
     .common-content{
         width: 80%;   
         text-align: center;
-       /* border: 1px solid red; */
-        
+       /* border: 1px solid red; */      
     }
 
     .nav-bar{
         flex-direction: column;
-        height: 10vh;
+        height: 20vh;
         gap: 10px;
     }
     .banner{
-        height: 40vh;
+        height: 60vh;
     }
     .banner-content{
         width: 80%;
@@ -354,14 +383,14 @@
     
     .banner-content>.form>.form-element,.common-button{
         padding: 1.5rem;
-        width: 20rem;
+        width: 14rem;
     }
 
     .tour-section{
         flex-direction: column;
     }
     
-    .tour-section-content,.tour-section-img{
+    .tour-section-content,.tour-section-img,.news-letter-content,.news-letter-img{
         width: 90%;
         margin-top: 20px;
     }
@@ -430,5 +459,8 @@
         background-color: red;
         grid-column: 1/span 1;
         grid-row: 3/span 1;
+    }
+    .news-letter{
+        flex-direction: column;
     }
 }
