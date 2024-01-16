@@ -194,7 +194,7 @@
 }
 
 /* destination section  */
-.destination,.choose-us{
+.destination,.choose-us,.honeymoon-section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -370,6 +370,22 @@
     gap: 20px;
 }
 
+/* honeymoon-section */
+
+.honeymoon-content{
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+}
+
+.honeymoon-image,.honeymoon-details{
+    width: 47%;
+}
+.honeymoon-image>img{
+    width: 100%;
+    border-radius: 20px;
+}
+
 @media screen and (max-width:600px) {
     
     .common-content{
@@ -405,7 +421,7 @@
         width: 90%;
     }
 
-    .tour-section{
+    .tour-section,.honeymoon-content{
         flex-direction: column;
     }
     
@@ -492,5 +508,10 @@
     .saving{
         position: relative;
         transform: rotate(-15deg) translate(170px,-100px);
+    }
+
+    .honeymoon-image,.honeymoon-details{
+        width: 100%;
+        margin-top: 20px;
     }
 }
