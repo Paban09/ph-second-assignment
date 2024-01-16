@@ -13,8 +13,9 @@
 :root{
     --orange-color:rgb(255,94,16);
     --white-color:rgb(255,255,255);
-    --text-color:rgb(29,52,69);
+    --text-color:rgb(90,90,93);
     --form-text-color:rgb(152,152,153);
+    
     --text-font-weight:400;
     --heading-font-weight: 800;
    
@@ -23,6 +24,10 @@
 .container{
     width: 80%;
     margin: 0 auto;
+}
+
+.px-2{
+    padding: 0 20px;
 }
 
 .mt-1{
@@ -36,10 +41,29 @@
 .mt-3{
     margin-top: 30px;
 }
+.mt-5{
+    margin-top: 50px;
+}
+
+.common-heading{
+    font-weight: var(--heading-font-weight);
+    font-size: 2rem;
+}
 
 .common-passage{
     font-weight: var(--text-font-weight);
     font-size: 1rem;
+    color: var(--text-color);
+}
+
+.common-button{
+    padding: .5rem;
+    width: 10rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--orange-color);
+    color: var(--white-color);
 }
 
 /* logo section  */
@@ -107,6 +131,9 @@
     font-size: 4rem;
     font-weight: var(--heading-font-weight);
 }
+.banner-passage{
+    color: var(--white-color);
+}
 
 
 .banner-content>.form{
@@ -128,21 +155,30 @@
     border-radius: 5px;
 }
 
-.common-button{
-    padding: .5rem;
-    width: 10rem;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    background-color: var(--orange-color);
-    color: var(--white-color);
-}
+
 
 .form-button{ 
     border: none;
     outline: none;  
     background-color: var(--orange-color);
     color: var(--white-color);
+}
+
+
+
+/* tour section  */
+.tour-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tour-section-content,.tour-section-img{
+    width: 48%;
+}
+
+.tour-section>.tour-section-img>img{
+    width: 100%;
 }
 
 @media screen and (max-width:600px) {
@@ -168,5 +204,14 @@
     .banner-content>.form>.form-element,.common-button{
         padding: 1rem;
         width: 18rem;
+    }
+
+    .tour-section{
+        flex-direction: column;
+    }
+    
+    .tour-section-content,.tour-section-img{
+        width: 90%;
+        margin-top: 20px;
     }
 }
