@@ -341,11 +341,12 @@
     width: 15rem;
     height: 6rem;
     text-align: center;
-    z-index: 10px;
+    /* z-index: 10px;
     position: relative;
     bottom: 135px;
-    left: 250px;
-    transform: rotate(-15deg);
+    left: 250px; */
+    position: absolute;
+    transform: rotate(-15deg) translate(270px,-120px);
 }
 
 
@@ -489,7 +490,7 @@
     }
 
     .saving{
-        bottom: 135px;
-        left: 180px;
+        position: relative;
+        transform: rotate(-15deg) translate(170px,-100px);
     }
 }
