@@ -150,7 +150,6 @@
 .banner-content>.form{
     display: flex;
     gap: 15px;
-    /* border: 5px solid red; */
     padding: 15px;
     background-color: red;
     border-radius: 8px;
@@ -166,15 +165,12 @@
     border-radius: 5px;
 }
 
-
-
 .form-button{ 
     border: none;
     outline: none;  
     background-color: var(--orange-color);
     color: var(--white-color);
 }
-
 
 
 /* tour section  */
@@ -194,7 +190,6 @@
 
 /* destination section  */
 .destination,.choose-us{
-    /* border: 1px solid rebeccapurple; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,15 +202,11 @@
     height: 100vh;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(3,1fr);
-    
     gap: 10px;
-    /* border: 2px solid red; */
     border-radius: 10px;
-    /* padding: 50px; */
 }
 
 .destination-img-grid>[class*='img-card-']{
-    /* border: 1px solid red; */
     border-radius: 10px;
     background-position: center;
     background-repeat: no-repeat;
@@ -227,50 +218,40 @@
 }
 
 .img-card-1{
-    /* background-color: yellow; */
     background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/imga.png);
     grid-column: 1/span 6;
     grid-row: 1/span 1;
 }
 .img-card-2{
     background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/imgb.png);
-    /* background-color: green; */
     grid-column: 7/span 6;
     grid-row: 1/span 1;
 }
 .img-card-3{
-    /* background-color: red; */
     background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/imgc.png);
     grid-column: 1/span 4;
     grid-row: 2/span 1;
 }
 
 .img-card-4{
-    /* background-color: green; */
     background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/imgd.png);
-
     grid-column: 5/span 5;
     grid-row: 2/span 1;
 }
 
 .img-card-5{
-    /* background-color: yellow; */
     background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/imgde.png);
-
     grid-column: 10/span 3;
     grid-row: 2/span 1;
 }
 
 .img-card-6{
-    /* background-color: yellow; */
     background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/imgf.png);
-
     grid-column: 1/span 5;
     grid-row: 3/span 1;
 }
 
 .img-card-7{
-    /* background-color: red; */
     background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/imgg.png);
 
     grid-column: 6/span 7;
@@ -287,9 +268,7 @@
     grid-template-rows: repeat(2,1fr);
     
     gap: 10px;
-    /* border: 2px solid red; */
     border-radius: 10px;
-    /* padding: 50px; */
 }
 
 .choose-us-grid>[class*='card-']{
@@ -309,17 +288,14 @@
 
 
 .card-1{
-    /* background-color: yellow; */
     grid-column: 1/span 2;
     grid-row: 1/span 1;
 }
 .card-2{
-    /* background-color: green; */
     grid-column: 3/span 2;
     grid-row: 1/span 1;
 }
 .card-3{
-    /* background-color: red; */
     grid-column: 2/span 2;
     grid-row: 2/span 1;
 }
@@ -350,8 +326,6 @@
     width: 100%;
     padding:1rem;
     border-radius: 10px;
-    /* border:none; */
-    /* outline: none; */
 }
 
 @media screen and (max-width:600px) {
@@ -359,20 +333,18 @@
     .common-content{
         width: 80%;   
         text-align: center;
-       /* border: 1px solid red; */      
     }
 
     .nav-bar{
         flex-direction: column;
-        height: 20vh;
+        height: 25vh;
         gap: 10px;
     }
     .banner{
-        height: 60vh;
+        height: 75vh;
     }
     .banner-content{
         width: 80%;
-        /* border: 1px solid red; */
     }
     .banner-title{
         font-size: 1.5rem;
@@ -401,41 +373,34 @@
    }
 
    .img-card-1{
-        /* background-color: yellow; */
         grid-column: 1/span 1;
         grid-row: 1/span 1;
     }
     .img-card-2{
-        /* background-color: green; */
         grid-column: 1/span 1;
         grid-row: 2/span 1;
     }
     .img-card-3{
-        /* background-color: red; */
         grid-column: 1/span 1;
         grid-row: 3/span 1;
     }
 
     .img-card-4{
-        /* background-color: green; */
         grid-column: 1/span 1;
         grid-row: 4/span 1;
     }
 
     .img-card-5{
-        /* background-color: yellow; */
         grid-column: 1/span 1;
         grid-row: 5/span 1;
     }
 
     .img-card-6{
-        /* background-color: yellow; */
         grid-column: 1/span 1;
         grid-row: 6/span 1;
     }
 
     .img-card-7{
-        /* background-color: red; */
         grid-column: 1/span 1;
         grid-row: 7/span 1;
     }
@@ -446,17 +411,14 @@
     }
 
     .card-1{
-        background-color: yellow;
         grid-column: 1/span 1;
         grid-row: 1/span 1;
     }
     .card-2{
-        background-color: green;
         grid-column: 1/span 1;
         grid-row: 2/span 1;
     }
     .card-3{
-        background-color: red;
         grid-column: 1/span 1;
         grid-row: 3/span 1;
     }
