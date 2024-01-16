@@ -288,18 +288,18 @@
 
     .nav-bar{
         flex-direction: column;
-        height: 10vh;
+        height: 15vh;
         gap: 10px;
     }
     .banner{
-        height: 35vh;
+        height: 60vh;
     }
     .banner-content{
         width: 80%;
         /* border: 1px solid red; */
     }
     .banner-title{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .banner-content>.form{
         flex-direction: column;
@@ -307,7 +307,7 @@
     
     .banner-content>.form>.form-element,.common-button{
         padding: 1rem;
-        width: 18rem;
+        width: 14rem;
     }
 
     .tour-section{
