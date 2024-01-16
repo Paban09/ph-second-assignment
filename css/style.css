@@ -14,8 +14,9 @@
     --orange-color:rgb(255,94,16);
     --white-color:rgb(255,255,255);
     --text-color:rgb(29,52,69);
-    --text-font-weight:400px;
-    --heading-font-weight: 800px;
+    --form-text-color:rgb(152,152,153);
+    --text-font-weight:400;
+    --heading-font-weight: 800;
    
 }
 
@@ -34,6 +35,11 @@
 
 .mt-3{
     margin-top: 30px;
+}
+
+.common-passage{
+    font-weight: var(--text-font-weight);
+    font-size: 1rem;
 }
 
 /* logo section  */
@@ -89,11 +95,54 @@
 }
 
 .banner-content{
-    width: 60%;
+    width: 65%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--white-color);
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: var(--heading-font-weight);
+}
+
+
+.banner-content>.form{
+    display: flex;
+    gap: 15px;
+    /* border: 5px solid red; */
+    padding: 15px;
+    background-color: red;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.banner-content>.form>.form-element{
+    padding: .5rem;
+    width: 10rem;
+    color: var(--form-text-color);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.common-button{
+    padding: .5rem;
+    width: 10rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--orange-color);
+    color: var(--white-color);
+}
+
+.form-button{ 
+    border: none;
+    outline: none;  
+    background-color: var(--orange-color);
+    color: var(--white-color);
 }
 
 @media screen and (max-width:600px) {
@@ -101,5 +150,23 @@
         flex-direction: column;
         height: 10vh;
         gap: 10px;
+    }
+    .banner{
+        height: 35vh;
+    }
+    .banner-content{
+        width: 80%;
+        /* border: 1px solid red; */
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-content>.form{
+        flex-direction: column;
+    }
+    
+    .banner-content>.form>.form-element,.common-button{
+        padding: 1rem;
+        width: 18rem;
     }
 }
