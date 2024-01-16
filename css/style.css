@@ -329,10 +329,17 @@
 }
 
 @media screen and (max-width:600px) {
-
+    .container{
+        width: 90%;
+    }
     .common-content{
         width: 80%;   
         text-align: center;
+    }
+    .common-button{
+        padding: .5rem;
+        width: 80%;
+        
     }
 
     .nav-bar{
@@ -424,5 +431,18 @@
     }
     .news-letter{
         flex-direction: column;
+    }
+
+    .news-letter-content{
+       
+        width: 90%;
+        
+        padding: 15px;
+    }
+    
+    .news-letter-form-element{
+        width: 100%;
+        padding:1rem;
+        border-radius: 10px;
     }
 }
