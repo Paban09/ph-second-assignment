@@ -193,7 +193,7 @@
 }
 
 /* destination section  */
-.destination{
+.destination,.choose-us{
     /* border: 1px solid rebeccapurple; */
     display: flex;
     flex-direction: column;
@@ -214,7 +214,7 @@
     /* padding: 50px; */
 }
 
-[class*='img-card-']{
+.destination-img-grid>[class*='img-card-']{
     /* border: 1px solid red; */
     border-radius: 10px;
     background-position: center;
@@ -277,6 +277,53 @@
     grid-row: 3/span 1;
 }
 
+
+/* choose us section  */
+.choose-us-grid{
+    display: grid;
+    width: 100%;
+    height: 60vh;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    
+    gap: 10px;
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    /* padding: 50px; */
+}
+
+.choose-us-grid>[class*='card-']{
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 10px;
+}
+
+.choose-us-grid .card-img{
+    height: 50px;
+    width: 50px;
+}
+.choose-us-grid .card-img>img{
+    width: 100%;
+}
+
+
+.card-1{
+    /* background-color: yellow; */
+    grid-column: 1/span 2;
+    grid-row: 1/span 1;
+}
+.card-2{
+    /* background-color: green; */
+    grid-column: 3/span 2;
+    grid-row: 1/span 1;
+}
+.card-3{
+    /* background-color: red; */
+    grid-column: 2/span 2;
+    grid-row: 2/span 1;
+}
+
 @media screen and (max-width:600px) {
 
     .common-content{
@@ -288,11 +335,11 @@
 
     .nav-bar{
         flex-direction: column;
-        height: 15vh;
+        height: 10vh;
         gap: 10px;
     }
     .banner{
-        height: 60vh;
+        height: 40vh;
     }
     .banner-content{
         width: 80%;
@@ -306,8 +353,8 @@
     }
     
     .banner-content>.form>.form-element,.common-button{
-        padding: 1rem;
-        width: 14rem;
+        padding: 1.5rem;
+        width: 20rem;
     }
 
     .tour-section{
@@ -362,5 +409,26 @@
         /* background-color: red; */
         grid-column: 1/span 1;
         grid-row: 7/span 1;
+    }
+    .choose-us-grid{
+        height: 40vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
+
+    .card-1{
+        background-color: yellow;
+        grid-column: 1/span 1;
+        grid-row: 1/span 1;
+    }
+    .card-2{
+        background-color: green;
+        grid-column: 1/span 1;
+        grid-row: 2/span 1;
+    }
+    .card-3{
+        background-color: red;
+        grid-column: 1/span 1;
+        grid-row: 3/span 1;
     }
 }
